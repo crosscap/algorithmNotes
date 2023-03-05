@@ -22,13 +22,11 @@ int main(void)
     scanf("%d %lf", &mc_num, &need);
     for (i = 0; i < mc_num; i++)
         scanf("%lf", &mooncakes[i].total);
-
     for (i = 0; i < mc_num; i++)
     {
         scanf("%lf", &mooncakes[i].sell);
         mooncakes[i].price = mooncakes[i].sell / mooncakes[i].total;
     }
-        
     qsort(mooncakes, mc_num, sizeof(mooncake), cmp);
     for (i = 0; need != 0 && i < mc_num; i++)
     {
