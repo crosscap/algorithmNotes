@@ -48,5 +48,5 @@ int main(void)
 
 int cmp(const void *a, const void *b)
 {
-    return ((mooncake*)a)->price < ((mooncake*)b)->price;
+    return ((mooncake*)b)->price > ((mooncake*)a)->price;
 }
