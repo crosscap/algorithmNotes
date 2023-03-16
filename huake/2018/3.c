@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAXNUM 1000
+#define MAXNUM 100000
 
 int main(void)
 {
